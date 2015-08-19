@@ -24,17 +24,20 @@
     "rc": "~0.5.0",
     "sails": "~0.11.0",
     "sails-disk": "~0.10.0",
-    "sails-hook-sequelize": "^1.0.1"
+    "sails-hook-sequelize": "^1.0.1",
+    "should": "^7.0.4",
+    "supertest": "^1.0.1"
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test" : "mocha test/bootstrap.test.js test/unit/**/*.test.js"
   },
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jasemabbas/sailsSequelizeScaffold.git"
+    "url": "git://github.com/vishnumishra/sailsSequelizeScaffold.git"
   },
-  "author": "jasemabbas",
+  "author": "vishnumishra",
   "license": ""
 }
