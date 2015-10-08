@@ -42,10 +42,11 @@ module.exports.connections = {
   ***************************************************************************/
   someMysqlServer: {
     adapter: 'sails-mysql',
-    host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-    user: 'YOUR_MYSQL_USER',
-    password: 'YOUR_MYSQL_PASSWORD',
-    database: 'YOUR_MYSQL_DB'
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: '123456',
+    database: 'sample'
   },
 
   /***************************************************************************
@@ -74,18 +75,18 @@ module.exports.connections = {
   *                                                                          *
   *                                                                          *
   ***************************************************************************/
-  somePostgresqlServer: {
-    user: 'postgres',
-    password: 'mypassword',
-    database: 'postgres',
-    dialect: 'postgres',
-    options: {
-        dialect: 'postgres',
-        host   : 'localhost',
-        port   : 5432,
-        logging: true
-    }
-  }
+  // somePostgresqlServer: {
+  //   user: 'postgres',
+  //   password: 'mypassword',
+  //   database: 'postgres',
+  //   dialect: 'postgres',
+  //   options: {
+  //       dialect: 'postgres',
+  //       host   : 'localhost',
+  //       port   : 5432,
+  //       logging: true
+  //   }
+  // }
 
 
   /***************************************************************************

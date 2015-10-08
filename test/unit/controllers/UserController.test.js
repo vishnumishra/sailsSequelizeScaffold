@@ -14,9 +14,9 @@ describe('UsersController', function() {
       request(sails.hooks.http.app)
         .post('/user/login')
         .send({ name: 'vishnu', password: 'test' })
-        .expect(501)
-        .expect('Content-Type', /json/)
-        .expect('sucess',false,done)
+        .expect(500)
+        .expect('Content-Type', /json/,done)
+        // .expect('sucess',false,)
         // .expect('err',"user or password not matching",done)
         // .expect('json',{sucess:false,err:'user or password not matching'},done)
     });
