@@ -9,6 +9,7 @@
  * http://sailsjs.org/#!/documentation/concepts/ORM
  */
 
+console.log();
 module.exports.models = {
 
   /***************************************************************************

@@ -57,12 +57,19 @@ module.exports = {
 // 			res.json({sucess:false,err:err});			
 // 		}
 // 	},
-	// login:function(req,res,next){
+	// login:function(req,rodds  = evens.map(function (v) { return v + 1; });es,next){
 	// 	if(req.body.name=="test"){
 	// 		return res.redirect("/mypage")
 	// 	}else{
 	// 	res.json(500,{sucess:false})			
 	// 	}
 	// }
+
+	ecma6Test:function(req,res,next){
+		var evens =req.body.evens
+		odds  = evens.map(v => v + 1);
+		
+		res.ok({sucess:true,'odds':odds});
+	}
 };
 
